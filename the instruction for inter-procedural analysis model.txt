@@ -1,0 +1,4 @@
+1.在函数声明节点和callee节点间，添加了属性为的FUNCTION_CALL边
+2.在实参和形参间添加了属性为 IS_ARG的边
+3.先执行joern将代码转为传统的代码属性图，java -Xmx2g -jar  ./bin/joern.jar /home/chucky/chucky/test_code/ .    假设图所在的目录是/home/chucky/chucky/.joernIndex
+4.执行该模块的命令是：java -jar ./icfg.jar -dbdir /home/chucky/chucky/.joernIndex
